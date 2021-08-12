@@ -55,7 +55,8 @@ a {
 }
 
 .card__header {
-  height: 35%;
+  background: #ffffff;
+  /* height: ; */
 }
 
 .card__header img {
