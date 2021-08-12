@@ -29,6 +29,7 @@ a {
   --font-bold: 700;
   --font-bolder: 900;
   --card-body-margin: 20px;
+  --card-body-margin-desktop: 30px;
 }
 
 /* index page start here  */
@@ -77,7 +78,7 @@ a {
   margin-bottom: var(--card-body-margin);
 }
 
-.card__body__title h2{
+.card__body__title h1{
   color: var(--dark-blue);
   font-weight: var(--font-bolder);
 }
@@ -103,6 +104,12 @@ a {
   background: var(--very-pale-blue);
 }
 
+.card__pricing__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .card__pricing__img {
   height: 50px;
   width: 50px;
@@ -117,7 +124,7 @@ a {
 }
 
 .card__pricing__desc {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .card__pricing__plan {
@@ -191,5 +198,19 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
+  }
+  
+  .card {
+    width: 450px;
+    height: 700px;
+  }
+
+  .card__body {
+    padding: 40px;
+  }
+
+  .card__pricing {
+    margin-bottom: var(--card-body-margin-desktop);
+    padding: 20px;
   }
 }

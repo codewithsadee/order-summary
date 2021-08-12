@@ -20,17 +20,17 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" role="main">
 
-    <div class="card">
+    <div class="card" role="dialog">
 
       <div class="card__header">
-        <img src="./images/illustration-hero.svg" alt="">
+        <img src="./images/illustration-hero.svg" alt="card header hero">
       </div>
 
       <div class="card__body">
         <div class="card__body__title">
-          <h2>Order Summary</h2>
+          <h1 role="heading">Order Summary</h1>
         </div>
 
         <div class="card__body__desc">
@@ -42,25 +42,27 @@
 
         <div class="card__pricing">
 
-          <div class="card__pricing__img">
-            <img src="./images/icon-music.svg" alt="">
+          <div class="card__pricing__header">
+            <div class="card__pricing__img">
+              <img src="./images/icon-music.svg" alt="music icon">
+            </div>
+
+            <div class="card__pricing__desc">
+              <p class="card__pricing__plan">Annual Plan</p>
+              <p class="card__pricing__price">$59.99/year</p>
+            </div>
           </div>
 
-          <div class="card__pricing__desc">
-            <p class="card__pricing__plan">Annual Plan</p>
-            <p class="card__pricing__price">$59.99/year</p>
-          </div>
-
-          <div class="btn--regular">
+          <div class="btn--regular" role="button">
             <a href="#">Change</a>
           </div>
         </div>
 
-        <div class="btn--primery">
+        <div class="btn--primery" role="button">
           <a href="#">Proceed to Payment</a>
         </div>
 
-        <div class="btn--secondery">
+        <div class="btn--secondery" role="button">
           <a href="">Cancel Order</a>
         </div>
       </div>
@@ -69,7 +71,7 @@
 
 
 
-    <div class="attribution">
+    <div class="attribution" role="doc-footnote">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/codewithsadee" target="_blank">codewithsadee</a>.
     </div>
